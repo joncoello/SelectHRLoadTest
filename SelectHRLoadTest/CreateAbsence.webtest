@@ -1,0 +1,1051 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WebTest Name="WebTest1" Id="8e9f074e-efaa-4f21-9227-2d339971f3ac" Owner="" Priority="2147483647" Enabled="True" CssProjectStructure="" CssIteration="" Timeout="0" WorkItemIds="" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010" Description="" CredentialUserName="" CredentialPassword="" PreAuthenticate="True" Proxy="default" StopOnError="False" RecordedResultFile="WebTest1.3cee6f05-d902-4666-901f-9e7ffbb7431c.rec.webtestresult" ResultsLocale="">
+  <Items>
+    <Request Method="GET" Guid="9e6c1fba-007a-43c6-b121-af3e0462082a" Version="1.1" Url="https://localhost/AccessSelect.Web" ThinkTime="2" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False" />
+    <Request Method="GET" Guid="637ce085-a66c-43f8-98b6-cb41c5619473" Version="1.1" Url="https://localhost/AccessSelect.Web" ThinkTime="3" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="https://localhost/AccessSelect.Web/Login.aspx" ReportingName="" IgnoreHttpStatusCode="False">
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractHiddenFields, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="1" DisplayName="Extract Hidden Fields" Description="Extract all hidden fields from the response and place them into the test context.">
+          <RuleParameters>
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam1.__EVENTTARGET" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value=" id=&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot; hre" />
+            <RuleParameter Name="Index" Value="17" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+    </Request>
+    <Request Method="POST" Guid="3cc3401d-3955-41e8-9de9-40b953f3edea" Version="1.1" Url="https://localhost/AccessSelect.Web/Login.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="https://localhost/AccessSelect.Web/Dashboard.aspx" ReportingName="" IgnoreHttpStatusCode="False">
+      <DependentRequests>
+        <Request Method="GET" Guid="0351613e-4274-4fd2-95d7-8c8d1d252598" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Session/GetSession" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="c178380a-42b3-4036-95c1-250ce05aaffb" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Menu/GetCurrentMenuItemHeader" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="9166aa68-3b5b-49c2-9f76-be6c3487231c" Version="1.1" Url="https://localhost/AccessSelect.Web/Stylesheets/Pictonic/fonts/pictonic.eot" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="47636777-415a-4787-82a3-6487f6f42066" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/UIElement/GetUIElements" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="token" Value="92C0YpkRw3a9O3MBOr6OaXqQK88x5kMk6Mr7eNUmkfM%3D" RecordedValue="92C0YpkRw3a9O3MBOr6OaXqQK88x5kMk6Mr7eNUmkfM%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="be384cfa-93ce-4f41-9c5f-69431be043e9" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/UserDialog/GetShowChangePreferences" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="78fb1f93-dd62-42ca-88f2-4bd126f8585f" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Menu/GetMenuSetIsShowViewAlerts" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="875f66b4-ff5e-4e15-80aa-c14623fff5f7" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Menu/GetMenuSetIsShowRequestAssistance" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="6f587374-45c6-4f22-9db4-7cdc673d46f9" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/UserDialog/GetUserAlertCount" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="d1e062fb-4afa-4e85-911d-149d65f3bcf2" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/Dashboard/GetPossibleDashboards" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="db514a66-00ea-401e-99f0-eb0513db1ec0" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/UIElement/GetAvailableUIElements" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="token" Value="92C0YpkRw3a9O3MBOr6OaXqQK88x5kMk6Mr7eNUmkfM%3D" RecordedValue="92C0YpkRw3a9O3MBOr6OaXqQK88x5kMk6Mr7eNUmkfM%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+      </DependentRequests>
+      <Headers>
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Login.aspx" />
+      </Headers>
+      <FormPostHttpBody>
+        <FormPostParameter Name="__LASTFOCUS" Value="{{$HIDDEN1.__LASTFOCUS}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTTARGET" Value="LinkButtonJohn" RecordedValue="LinkButtonJohn" CorrelationBinding="{{FormPostParam1.__EVENTTARGET}}" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTARGUMENT" Value="{{$HIDDEN1.__EVENTARGUMENT}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATE" Value="{{$HIDDEN1.__VIEWSTATE}}" RecordedValue="i2yI/kGda/ODLKo+V812KxMhNEcNqZP4IgBVoAYZS9t5QfQDgH2TSdXYgsXJ78dVgD0xE+44Ocn6Dqis6Gmk1SowZsif9Lz5IKVSDG6nX4dOt7GJocvbyAM9ZdR3zv1DcTtOoajaNjRX4/BfgEbHUrv6d1mLLCo+RyIy6WjkHSbAL3nz/xY6tE8ekGs5eKx5iWv0SjYJSxU6gPgJkz3eFXLe5bK0MsB+SDqrSrSVsf3cdf2t7eo5hr8RHWtk9QvraE0mG/ktWAdBn4IEsFQMHdwDjNC3AsFkFyxp2t2zF1daZEAkY9rwIkfke1FXngLBDIep7jQC6bGBPsCByE/BGIw8xU8knj/YXTITRT6EUPsReWJ4A7du4Zp5gZYZ6eWADu3G9V98VAVYSQ6N4vX4HyDXgGNf3xvg06EQ4sZ1Ck+EAXEL8SonQd34c01or6YyFQE3GuaKkDuLY3yPHW2hXe45AkAQKvJKDqZGQr+sFIYeB6zR04axIJNw9ul/y548kWnPFq9I0tkph25ApWUB/KY+UFf8hASS2aKK30iuhZGFbuDxYQ9ZdlaFrfXlLtihg6dXhC5V2NFgcwc/mI6/j8h9YgZt8yNq8Ra/Ai7zEj6bGNe12W4D9rnjE1rrr8ZmaNR/FKi1/9G+YJVf1wK+KTa7sSm62n7xud/tER41FihZteCybvKCSfMkefGyZM9c6muRQPeeElBxlL3a4camv83hncgDR3Oha/EJDUwiRqFhWkpnSLf6rFUuCUHVCYnH/f7MFiu6GmhInS/ZuCTFVg==" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="TextBoxUserName" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="TextBoxPassword" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATEGENERATOR" Value="{{$HIDDEN1.__VIEWSTATEGENERATOR}}" RecordedValue="21B14E72" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATEENCRYPTED" Value="{{$HIDDEN1.__VIEWSTATEENCRYPTED}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTVALIDATION" Value="{{$HIDDEN1.__EVENTVALIDATION}}" RecordedValue="XmB2VW+UKz7VIa4j+5Xk2cLY/L+REtedc1vlfB+gy6uNVlvefFDvibv+iODbCpEGw6L5t3RQXWRC6JphHWLa4brjEWztZ65bQh42Sk2nJkBM1WmfewgtN08kf3Zzxwpdud1D3h8Jjq6/qtnV/NDgaefpKY1sUHv0cHZn+uxc9qW3bF1oU00ugCfuAEQlKGiEli19szhe8Yj1w9vRLkFF9nz+MtDEAs4EX4NsK72ZKMCuf56XDpsXEHZtjbYquC9f" CorrelationBinding="" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="GET" Guid="417be03e-c97b-468d-9760-f2d9a004e494" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Menu/GetMenuSetInitial" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="menuItemNumber" Value="NaN" RecordedValue="NaN" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="menuSetNumber" Value="-1" RecordedValue="-1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="4c34dcc2-8c57-4358-b614-d10bd385f2b7" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/Dashboard/GetDashboardControl" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="token" Value="FqCft8nuRtXdp%2F5eqsA2Dar9mfB76PfUFIiWLNMl%2BNE%3D" RecordedValue="FqCft8nuRtXdp%2F5eqsA2Dar9mfB76PfUFIiWLNMl%2BNE%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="7404a3b9-3f77-4fe6-b962-be890e7fb764" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/Dashboard/GetDashboardControl" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="token" Value="FqCft8nuRtXdp%2F5eqsA2DYD4O3%2FXjbsSQI2GHYOmkko%3D" RecordedValue="FqCft8nuRtXdp%2F5eqsA2DYD4O3%2FXjbsSQI2GHYOmkko%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="4ce805d7-14a4-4354-b6d7-1a7bacae929e" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Menu/SetMenuCollapse" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="collapsed" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="ad7a0492-dc07-4bbd-9429-37d3d5a6afd8" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Menu/GetBadgeCount" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="processNumber" Value="1422" RecordedValue="1422" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="28695af9-231d-4cc5-98c1-1164404fef2d" Version="1.1" Url="https://localhost/AccessSelect.Web/%7B%7Blink.AlternativeIcon%7D%7D" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="8ba1ec01-ac5a-4970-8016-bc53d681518d" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/Dashboard/GetLinkControl" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="token" Value="FqCft8nuRtXdp%2F5eqsA2Dar9mfB76PfUFIiWLNMl%2BNE%3D" RecordedValue="FqCft8nuRtXdp%2F5eqsA2Dar9mfB76PfUFIiWLNMl%2BNE%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="b54f164c-59c0-4a7d-b5bb-7807835cd03a" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Listing/GetListing" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="token" Value="sKZ14Nb1NsbI4Pe%2B9aGR%2Ff3BP9j7p4%2FA4bJllboBKsHZI%2Fn%2Bm8tDA58bUt1R%2F%2BzKBdPNp%2BOIlrizoxohxeg3%2FF4tQUfSTePYvVtg%2B5nTVBfqWG3ex8s2HxJUbSqUAq9Lumzn%2Fez45XJZ88G1PiEyOBTiRksmbrB%2Fnz7RL4q%2F%2BzsLfWwbzYhGsqx64JZ0eXyb" RecordedValue="sKZ14Nb1NsbI4Pe%2B9aGR%2Ff3BP9j7p4%2FA4bJllboBKsHZI%2Fn%2Bm8tDA58bUt1R%2F%2BzKBdPNp%2BOIlrizoxohxeg3%2FF4tQUfSTePYvVtg%2B5nTVBfqWG3ex8s2HxJUbSqUAq9Lumzn%2Fez45XJZ88G1PiEyOBTiRksmbrB%2Fnz7RL4q%2F%2BzsLfWwbzYhGsqx64JZ0eXyb" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="3359068e-4062-4c8e-9c1b-c56647ca9adc" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/BusinessIntelligence/GetChartData" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+      </Headers>
+      <StringHttpBody ContentType="application/json;charset=utf-8" InsertByteOrderMark="False">ewAiAEYAaQBsAHQAZQByACIAOgBuAHUAbABsACwAIgBLAGUAeQBzACIAOgBbAF0ALAAiAEwAaQBzAHQAaQBuAGcAVABvAGsAZQBuACIAOgAiAHMASwBaADEANABOAGIAMQBOAHMAYgBJADQAUABlACsAOQBhAEcAUgAvAGEAYwB4AHkAawByAC8AeQBXAHQAegBqADAAVgBPAEEASABVAEMATgBjACsAQQA0AFUAVQA1AC8AQwBPAEsAdwB2AHcAcABwAG8AMwBuAFUAOQAzAFoATQAwAHAAVQAvAEUAagBpAFgAVgBZAGoAawBlAGUAbwBnADQARAA1AGcAKwBTAHIAeABoAE0AZwBRAGQAUgA3AGIATgBQAHEAcQB5AFgANABxAHEARgBZAHMAVABkADYANgBuAHMAMQB6AEYARAAwADYAeABmAEkAawBEAEcAZQB3AGEAawBMADgAQQB4ADAAcQA5ADEAeABWAEQAKwBpAEEAeQB5AEgASQBEAEcALwByAFcAYwBhADYANQBjAGMAUgArAFEAYwBPAHgAVQBMAFoAZQA0AD0AIgAsACIAUABhAGcAZQAiADoAMAAsACIAUABhAGcAZQBTAGkAegBlACIAOgAtADEALAAiAFAAcgBvAGMAZQBzAHMARgB1AG4AYwB0AGkAbwBuAE4AdQBtAGIAZQByACIAOgA0ADgAOQA4ACwAIgBTAG8AcgB0AGkAbgBnAEYAaQBlAGwAZABzACIAOgBuAHUAbABsAH0A</StringHttpBody>
+    </Request>
+    <Request Method="GET" Guid="0589ff03-4052-4dd8-8615-c7541690d106" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/BusinessIntelligence/GetChartMeta" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="token" Value="sKZ14Nb1NsbI4Pe%2B9aGR%2Facxykr%2FyWtzj0VOAHUCNc%2BA4UU5%2FCOKwvwppo3nU93ZM0pU%2FEjiXVYjkeeog4D5g%2BSrxhMgQdR7bNPqqyX4qqFYsTd66ns1zFD06xfIkDGewakL8Ax0q91xVD%2BiAyyHIDG%2FrWca65ccR%2BQcOxULZe4%3D" RecordedValue="sKZ14Nb1NsbI4Pe%2B9aGR%2Facxykr%2FyWtzj0VOAHUCNc%2BA4UU5%2FCOKwvwppo3nU93ZM0pU%2FEjiXVYjkeeog4D5g%2BSrxhMgQdR7bNPqqyX4qqFYsTd66ns1zFD06xfIkDGewakL8Ax0q91xVD%2BiAyyHIDG%2FrWca65ccR%2BQcOxULZe4%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="8c69dc84-1785-4a44-8bec-96d9723b0b4d" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/BusinessIntelligence/GetChartData" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+      </Headers>
+      <StringHttpBody ContentType="application/json;charset=utf-8" InsertByteOrderMark="False">ewAiAEYAaQBsAHQAZQByACIAOgBuAHUAbABsACwAIgBLAGUAeQBzACIAOgBbAF0ALAAiAEwAaQBzAHQAaQBuAGcAVABvAGsAZQBuACIAOgAiAHMASwBaADEANABOAGIAMQBOAHMAYgBJADQAUABlACsAOQBhAEcAUgAvAFUAbwBKAGcAVQA5AEkAWQBqAEQAZwAyAFIAUwBQAGoAMABBAFUATwAwADEAeQA3AHMAVgBRAGwANAByAGwAOABLAHYARgBWAGkAaQBjAGMANABmAHQASAArAEgAZQBMAFYAUQBTAEgAWQB1ADYAUwA2ADYAKwBTAHQAWgBnAGwAQwBKAHgAcgB3AFUARQBhAFoAUwB3AGMAQQBpAGcAaQB6AHAAcQBiAGgATQBOAHcAVwBTAC8AdgBQAE0AcABYAHMARAB6ADQAZQBKAFEAcAAwAEIAawBSAEwAQgBaAGcAYgA1AFIATQB4AEUASwBRAFIAcQBQAEcAbwBsAG4AVQBPAGsAUwBTADkAVgBFAFAALwB4AHcAegBxAFQAbgBhAEoANQBJAG8AZgBVAD0AIgAsACIAUABhAGcAZQAiADoAMAAsACIAUABhAGcAZQBTAGkAegBlACIAOgAtADEALAAiAFAAcgBvAGMAZQBzAHMARgB1AG4AYwB0AGkAbwBuAE4AdQBtAGIAZQByACIAOgA0ADkAMAAwACwAIgBTAG8AcgB0AGkAbgBnAEYAaQBlAGwAZABzACIAOgBuAHUAbABsAH0A</StringHttpBody>
+    </Request>
+    <Request Method="GET" Guid="372727d5-2841-4efc-a6b1-272381408827" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/BusinessIntelligence/GetChartMeta" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="token" Value="sKZ14Nb1NsbI4Pe%2B9aGR%2FUoJgU9IYjDg2RSPj0AUO01y7sVQl4rl8KvFViicc4ftH%2BHeLVQSHYu6S66%2BStZglCJxrwUEaZSwcAigizpqbhMNwWS%2FvPMpXsDz4eJQp0BkRLBZgb5RMxEKQRqPGolnUOkSS9VEP%2FxwzqTnaJ5IofU%3D" RecordedValue="sKZ14Nb1NsbI4Pe%2B9aGR%2FUoJgU9IYjDg2RSPj0AUO01y7sVQl4rl8KvFViicc4ftH%2BHeLVQSHYu6S66%2BStZglCJxrwUEaZSwcAigizpqbhMNwWS%2FvPMpXsDz4eJQp0BkRLBZgb5RMxEKQRqPGolnUOkSS9VEP%2FxwzqTnaJ5IofU%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="3fc74325-aa09-45dc-8c94-e87558539027" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/BusinessIntelligence/GetChartData" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+      </Headers>
+      <StringHttpBody ContentType="application/json;charset=utf-8" InsertByteOrderMark="False">ewAiAEYAaQBsAHQAZQByACIAOgBuAHUAbABsACwAIgBLAGUAeQBzACIAOgBbAF0ALAAiAEwAaQBzAHQAaQBuAGcAVABvAGsAZQBuACIAOgAiAHMASwBaADEANABOAGIAMQBOAHMAYgBJADQAUABlACsAOQBhAEcAUgAvAGIAQgBZAE0AQwBjAG0AKwBCAEMAOQBmAE4ARwBoAC8AMgBUAGEAOQBzAEQAQQBvAHMAZAA2AHQATQBFAFoARQBvAFgAVwB3AGQAcgBWAFQAKwA3AGYAeQBLAEwASABjADcAZwBTAGwAMQB5AE8AWAA1AFgAeABNAEcAUgBXAGUAWAAzAEUAOQBNAHcASwB3ADYATABhAHgAbAA1AHgARgBHADkAZQBZAFAAeQBTAE4ANgA0ADgARgBSAE4AcABzAG4AeABUADQANQBXAHYAbgBoAGoAbgBhAEEAcQBWAEwAdgBnAHAAVwBUAEUANwBjAEUAUgBSAFoAawBxADYAMgBaADYAWAB3ADMASgA2AEUAeABaAGUAcQBNAHMAbAA5AHkAVwBBAHcAMwBZAD0AIgAsACIAUABhAGcAZQAiADoAMAAsACIAUABhAGcAZQBTAGkAegBlACIAOgAtADEALAAiAFAAcgBvAGMAZQBzAHMARgB1AG4AYwB0AGkAbwBuAE4AdQBtAGIAZQByACIAOgA0ADkAMAAyACwAIgBTAG8AcgB0AGkAbgBnAEYAaQBlAGwAZABzACIAOgBuAHUAbABsAH0A</StringHttpBody>
+    </Request>
+    <Request Method="GET" Guid="c77eb0b3-06ab-4947-8afd-0c3b74ca79ce" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/BusinessIntelligence/GetChartMeta" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="token" Value="sKZ14Nb1NsbI4Pe%2B9aGR%2FbBYMCcm%2BBC9fNGh%2F2Ta9sDAosd6tMEZEoXWwdrVT%2B7fyKLHc7gSl1yOX5XxMGRWeX3E9MwKw6Laxl5xFG9eYPySN648FRNpsnxT45WvnhjnaAqVLvgpWTE7cERRZkq62Z6Xw3J6ExZeqMsl9yWAw3Y%3D" RecordedValue="sKZ14Nb1NsbI4Pe%2B9aGR%2FbBYMCcm%2BBC9fNGh%2F2Ta9sDAosd6tMEZEoXWwdrVT%2B7fyKLHc7gSl1yOX5XxMGRWeX3E9MwKw6Laxl5xFG9eYPySN648FRNpsnxT45WvnhjnaAqVLvgpWTE7cERRZkq62Z6Xw3J6ExZeqMsl9yWAw3Y%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="0e77767f-6907-4c39-830b-4300aef44fc6" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/Dashboard/GetLinkControl" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="token" Value="FqCft8nuRtXdp%2F5eqsA2DYD4O3%2FXjbsSQI2GHYOmkko%3D" RecordedValue="FqCft8nuRtXdp%2F5eqsA2DYD4O3%2FXjbsSQI2GHYOmkko%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="3dd6f268-0cdf-49d9-983c-e9339348a604" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/Alert/GetAlerts" ThinkTime="5" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+      </Headers>
+      <StringHttpBody ContentType="" InsertByteOrderMark="False">
+      </StringHttpBody>
+    </Request>
+    <Request Method="GET" Guid="d3babc8c-08d9-4b1f-b145-1f97bb39d974" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Menu/GetMenuHeaderMenuItems" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="menuHeaderNumber" Value="8304" RecordedValue="8304" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="userNumber" Value="0" RecordedValue="0" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="ef4717eb-086c-4d74-8e9b-5423decbd3f7" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Menu/GetBadgeCount" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="processNumber" Value="1401" RecordedValue="1401" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="b735c88a-b67e-4b2d-b5a1-424850f91227" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Menu/GetBadgeCount" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="processNumber" Value="1097" RecordedValue="1097" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="66ed0b41-b3d9-4e81-8819-9ddd9419d1f2" Version="1.1" Url="https://localhost/AccessSelect.Web/transfer.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" ReportingName="" IgnoreHttpStatusCode="False">
+      <DependentRequests>
+        <Request Method="GET" Guid="476fbc6f-dcd8-4098-97ad-f9725e35d23d" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Session/GetSession" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="0222b863-8fc6-46bf-b8bf-3fbd8a8b21e1" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Menu/GetCurrentMenuItemHeader" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="bbd22661-88f5-4e8b-8fd3-f16d4afcf437" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/ProcessFunction/GetTabs" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="uiElementToken" Value="sKZ14Nb1NsbI4Pe%2B9aGR%2FWM9XsF2DKKhj%2FSn0%2FrVMglUdHUgODbxkB%2F3aFs%2BvtNwYPwaRCYfDaMz84U3RJ5ijyPdaD4mOGyRifpOy7nqXKrBT9JsXnA0%2FGqIzr7XceOf1cu%2Fx4SChMZFRoBX0SYQeS7%2B2eHreCGtXyMoUqBRM6S8qCMjr%2BqcHFqjaNkdMgrj" RecordedValue="sKZ14Nb1NsbI4Pe%2B9aGR%2FWM9XsF2DKKhj%2FSn0%2FrVMglUdHUgODbxkB%2F3aFs%2BvtNwYPwaRCYfDaMz84U3RJ5ijyPdaD4mOGyRifpOy7nqXKrBT9JsXnA0%2FGqIzr7XceOf1cu%2Fx4SChMZFRoBX0SYQeS7%2B2eHreCGtXyMoUqBRM6S8qCMjr%2BqcHFqjaNkdMgrj" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="POST" Guid="b4abbbc7-94c5-4788-9217-f8ab8e132c5f" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/ProcessFunction/GetBreadCrumbs" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+          </Headers>
+          <StringHttpBody ContentType="application/json;charset=utf-8" InsertByteOrderMark="False">ewAiAFUAaQBFAGwAZQBtAGUAbgB0AEkAZAAiADoAIgA1ADUANwBjADQAZgAxADQALQA5ADcANQA2AC0ANAA2ADcAYgAtAGEANABkADYALQA1ADYAMgA0ADUAZgAzAGMAMAAwADMANQAiAH0A</StringHttpBody>
+        </Request>
+        <Request Method="GET" Guid="77c63357-d333-4838-b302-f17c7e2e26ff" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Listing/GetListing" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="token" Value="sKZ14Nb1NsbI4Pe%252B9aGR%252FWM9XsF2DKKhj%252FSn0%252FrVMglUdHUgODbxkB%252F3aFs%252BvtNwYPwaRCYfDaMz84U3RJ5ijyPdaD4mOGyRifpOy7nqXKrBT9JsXnA0%252FGqIzr7XceOf1cu%252Fx4SChMZFRoBX0SYQeS7%252B2eHreCGtXyMoUqBRM6S8qCMjr%252BqcHFqjaNkdMgrj" RecordedValue="sKZ14Nb1NsbI4Pe%252B9aGR%252FWM9XsF2DKKhj%252FSn0%252FrVMglUdHUgODbxkB%252F3aFs%252BvtNwYPwaRCYfDaMz84U3RJ5ijyPdaD4mOGyRifpOy7nqXKrBT9JsXnA0%252FGqIzr7XceOf1cu%252Fx4SChMZFRoBX0SYQeS7%252B2eHreCGtXyMoUqBRM6S8qCMjr%252BqcHFqjaNkdMgrj" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="POST" Guid="6a6c9349-1fb2-429f-8df3-99d09f2464d4" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Listing/GetSidebar" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+          </Headers>
+          <StringHttpBody ContentType="application/json;charset=utf-8" InsertByteOrderMark="False">ewAiAEwAaQBzAHQAaQBuAGcAVABvAGsAZQBuACIAOgAiAHMASwBaADEANABOAGIAMQBOAHMAYgBJADQAUABlACsAOQBhAEcAUgAvAFcATQA5AFgAcwBGADIARABLAEsAaABqAC8AUwBuADAALwByAFYATQBnAGwAVQBkAEgAVQBnAE8ARABiAHgAawBCAC8AMwBhAEYAcwArAHYAdABOAHcAWQBQAHcAYQBSAEMAWQBmAEQAYQBNAHoAOAA0AFUAMwBSAEoANQBpAGoAeQBQAGQAYQBEADQAbQBPAEcAeQBSAGkAZgBwAE8AeQA3AG4AcQBYAEsAcgBCAFQAOQBKAHMAWABuAEEAMAAvAEcAcQBJAHoAcgA3AFgAYwBlAE8AZgAxAGMAdQAvAHgANABTAEMAaABNAFoARgBSAG8AQgBYADAAUwBZAFEAZQBTADcAKwAyAGUASAByAGUAQwBHAHQAWAB5AE0AbwBVAHEAQgBSAE0ANgBTADgAcQBDAE0AagByACsAcQBjAEgARgBxAGoAYQBOAGsAZABNAGcAcgBqACIALAAiAEIAcgBlAGEAZABjAHIAdQBtAGIAVABvAGsAZQBuACIAOgAiADgAbAAxAEoAcABUAG0ARAAyAHQAYQBrAHkASABGACsAawBMAFgAcgBhAHcAPQA9ACIALAAiAFAAcgBvAGMAZQBzAHMARgB1AG4AYwB0AGkAbwBuAE4AdQBtAGIAZQByACIAOgAiADEANwA4ADUAIgB9AA==</StringHttpBody>
+        </Request>
+        <Request Method="GET" Guid="e8329326-ed32-440d-99cf-cd099fe03d30" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/Sidebar/GetOverview" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="61c3efa8-7f42-41a0-9ca0-4654b5a6669d" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/UserDialog/GetShowChangePreferences" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="1a1909dc-32f0-4b95-acd3-9173c9234664" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Menu/GetMenuSetIsShowViewAlerts" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="288b52cc-bdfa-4afc-b141-a86443e63c32" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Menu/GetMenuSetIsShowRequestAssistance" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="b7d576d3-37b2-4225-b2fb-1255813f5791" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/UserDialog/GetUserAlertCount" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="3890c0e7-cb97-429e-b85d-27b7947e2bb1" Version="1.1" Url="https://localhost/AccessSelect.Web/Stylesheets/Pictonic/fonts/pictonic.eot" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="b04fe529-8b3a-491f-ad67-918acf0b3df7" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Menu/SetMenuCollapse" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="collapsed" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+      </DependentRequests>
+      <Headers>
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="mi" Value="8306" RecordedValue="8306" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="34c81aa4-08c7-4eaf-b2ac-0ff35d3e56f6" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Menu/GetMenuSetInitial" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="menuItemNumber" Value="8304" RecordedValue="8304" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="menuSetNumber" Value="-1" RecordedValue="-1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="c7206dac-e7ae-453a-a973-68be809c2f18" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Listing/GetListingPreferences" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+      </Headers>
+      <StringHttpBody ContentType="application/json;charset=utf-8" InsertByteOrderMark="False">ewAiAEwAaQBzAHQAaQBuAGcATgB1AG0AYgBlAHIAIgA6ADEANgAzADgAfQA=</StringHttpBody>
+    </Request>
+    <Request Method="GET" Guid="0af90373-022a-4555-bfd4-eb4e03b3d07d" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/UserDialog/GetFavourites" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="8e8a59ab-b402-4310-b984-89ae44ac8261" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Menu/GetBadgeCount" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="processNumber" Value="1401" RecordedValue="1401" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="3dc8889c-abd0-4289-8364-25845b723e0d" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Menu/GetBadgeCount" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="processNumber" Value="1097" RecordedValue="1097" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="acbde07e-aa02-4d5d-b9ae-0d252a2616cf" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/Listing/GetListingData" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+      </Headers>
+      <StringHttpBody ContentType="application/json;charset=utf-8" InsertByteOrderMark="False">ewAiAEYAaQBsAHQAZQByACIAOgB7ACIATgBhAG0AZQAiADoAIgAiACwAIgBMAGkAcwB0AGkAbgBnAE4AdQBtAGIAZQByACIAOgAxADYAMwA4ACwAIgBHAGUAbgBlAHIAYQBsAFMAZQBhAHIAYwBoAFQAZQByAG0AcwAiADoAIgAiACwAIgBRAHUAaQBjAGsARgBpAGwAdABlAHIAVgBhAGwAdQBlACIAOgAiACIALAAiAFEAdQBpAGMAawBGAGkAbAB0AGUAcgBGAGkAZQBsAGQAIgA6ACIATgBhAG0AZQAiACwAIgBDAHIAaQB0AGUAcgBpAGEAIgA6AFsAewAiAEwAaQBzAHQAaQBuAGcARgBpAGUAbABkAE4AdQBtAGIAZQByACIAOgAxADcAMgAwADQALAAiAEcAcgBvAHUAcABpAG4AZwBGAGkAZQBsAGQATgB1AG0AYgBlAHIAIgA6ADAALAAiAE8AcABlAHIAYQB0AG8AcgAiADoAIgA9ACIALAAiAFYAYQBsAHUAZQAiADoAIgBDAHUAcgByAGUAbgB0ACIALAAiAEcAcgBvAHUAcAAiADoAMQAsACIASQBzAEQAZQBmAGEAdQBsAHQAIgA6AHQAcgB1AGUALAAiAEkAcwBEAG8AYwB1AG0AZQBuAHQATABpAG4AawAiADoAZgBhAGwAcwBlACwAIgBEAGUAcwBjAHIAaQBwAHQAaQBvAG4AIgA6ACIARQBmAGYAZQBjAHQAaQB2AGUAIABTAHQAYQB0AHUAcwAgAEkAcwAgAEUAeABhAGMAdABsAHkAIABMAGkAawBlACAAXAAiAEMAdQByAHIAZQBuAHQAXAAiACIAfQBdAH0ALAAiAEsAZQB5AHMAIgA6AFsAXQAsACIATABpAHMAdABpAG4AZwBUAG8AawBlAG4AIgA6ACIAcwBLAFoAMQA0AE4AYgAxAE4AcwBiAEkANABQAGUAKwA5AGEARwBSAC8AVwBNADkAWABzAEYAMgBEAEsASwBoAGoALwBTAG4AMAAvAHIAVgBNAGcAbABVAGQASABVAGcATwBEAGIAeABrAEIALwAzAGEARgBzACsAdgB0AE4AdwBZAFAAdwBhAFIAQwBZAGYARABhAE0AegA4ADQAVQAzAFIASgA1AGkAagB5AFAAZABhAEQANABtAE8ARwB5AFIAaQBmAHAATwB5ADcAbgBxAFgASwByAEIAVAA5AEoAcwBYAG4AQQAwAC8ARwBxAEkAegByADcAWABjAGUATwBmADEAYwB1AC8AeAA0AFMAQwBoAE0AWgBGAFIAbwBCAFgAMABTAFkAUQBlAFMANwArADIAZQBIAHIAZQBDAEcAdABYAHkATQBvAFUAcQBCAFIATQA2AFMAOABxAEMATQBqAHIAKwBxAGMASABGAHEAagBhAE4AawBkAE0AZwByAGoAIgAsACIAUABhAGcAZQAiADoAMQAsACIAUABhAGcAZQBTAGkAegBlACIAOgAxADIALAAiAFAAcgBvAGMAZQBzAHMARgB1AG4AYwB0AGkAbwBuAE4AdQBtAGIAZQByACIAOgAiADEANwA4ADUAIgAsACIAUwBvAHIAdABpAG4AZwBGAGkAZQBsAGQAcwAiADoAWwB7ACIAUwBvAHIAdABPAHIAZABlAHIAIgA6ADAALAAiAFMAbwByAHQAQQBzAGMAZQBuAGQAaQBuAGcAIgA6AHQAcgB1AGUALAAiAEYAaQBlAGwAZABOAGEAbQBlACIAOgAiAE4AYQBtAGUAIgAsACIARwByAG8AdQBwAGkAbgBnACIAOgBmAGEAbABzAGUAfQBdAH0A</StringHttpBody>
+    </Request>
+    <Request Method="POST" Guid="134c50c7-d859-4a10-8d46-a0c63945de95" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/Alert/GetAlerts" ThinkTime="10" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+      </Headers>
+      <StringHttpBody ContentType="" InsertByteOrderMark="False">
+      </StringHttpBody>
+    </Request>
+    <Request Method="POST" Guid="cbd09d6b-8ad3-4e98-b3b3-70d918ef669b" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/Listing/RunButtonCommand" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+      </Headers>
+      <StringHttpBody ContentType="application/json;charset=utf-8" InsertByteOrderMark="False">ewAiAEwAaQBzAHQAaQBuAGcARABhAHQAYQBUAG8AawBlAG4AIgA6ACIAeAAyAHcASABCAEkAdQBzAGoASgB6AEIAYQBKAFIARQA5AEgAdwB5AEQAdABqAGQAUQAxAFgANwBYAFEAegA3AGkAcQB6AHEAVwA3AHoAVgAyAFAAZgBzAHQAcwBnAFkAUwB3AGwATAAwAHUAagBTAE4ARQAwAFcAMQBJAFQAQQBIAHgAUQBPAC8ANwBzAHAAcgB6AGQASwBxAFMATgBzAFAAcQBaAGsAKwA5AEoAZQBzAEUAcQA5ADQAbQBrAG4AegBpAC8AbABhAEwAZABLAFUAMABBAGcAdABFAFUAWABJAGIAYgBJAHoAOABNAFcAZABqAGkAawBFAHYAMABzAFIAMwBkAGwAawB3AC8AMwArAGUAcAAzAFcAMgBoAEoAZwAxADYAbwBlAEQAdgBCAHkAdQBCAGIAcgBVAC8AWABQAEkAVABDAHUAVABEAE4AaAArAGMAMQAyACsANQBnAHcAeQBJAEQAYQBsACsANwBWADkAYwBEAGYASgArADYAdwB3AEgANABNAE8AYgB4AE8AUwBoADcAbwBPAE0ANQBxAEsANwBoAFMAMwAxAEMAcABJAC8AbwBqAGIAQgB3AFkAdwA1AGMAMgBtAEgARgA0AGEAWgBmAFMAawA0AGIANwByAHkAMQBqAEsATQBRAFIAQQB2AE0AbQA4AGMASgA5ADkAdQBnADMAUABkAE8AKwBUAHkARAAwADMARQBzAEEAYgBlAGQALwBUAFMAQwBVAFoAaQBRAHMAOAB1AEYAdwAyAEsASABzAGwAcgBlAEcAaAA4AFEASwAyAFQARwB3AHQAegBrADQANABMAHMAYgBZAHcASgBRAGcAbgBuAFAATwBpAEoAdQBaAGkAWQBRAEYAcABYAFoAYQBrAHYANwB5AGwANgBhACsAMwBqAHMAYgBOAG0AbgAvAHUAWQBTAEkAYQBBADUAOABiAFcARwB0AGEASQBnAFkAMgBsAEgAVQA3AHMANwBxAGwAOQBvAHYAZgB1ADUAZgA0AC8AYgB6AHoAbgA2ADMAZwBEAEsAbgBuAHEATgBTAFUAYgBUAHQAMABtAHYAQwBMADcAbQBmADkAZgBMAGIAawBrADIAZQBuAFMAZAB6AGIAbwB4AFkATABVAHoAMwBwAGcARQBYAFcARwBzAGYAbABYAGcAdwBvAFMATwBFAGcAVwBsAGYAbwBKAGYAdQBXAFAAOQBCAFUATwBtAGEARgBLAGsAQgBMAFAAZwBGAEYAOABsAFIAMwAwAFcAWABMAGQAUAA4AGcANAAwAFkAZwB3AGIAdgBhADkARgBjAEIAcQA3AEsAagBNAHMAWQA5AFQARABaAFgAVwBhAFIARgBNADAATQBDAE0AZQBiADcAbgBjADMARgBRAEkAaQA2AG4AcQBMAEUAcwBPAFIAdwBhAE0AMABaAGoAZABCAEcAQgBZAHMANgBNAEsAKwAwADgAQgBuAFgAeABmADUASQBaAFAAUwArAGQASgB4AEMAQQBEAFcAOABpAEIAdgByAFEAWABUAEIAUAB3ADQAUQBqAHgAQQA4ADcAZgBSAFEAaQB4AG4AOQBqAFMAcgBWAHgAUQB0AFgAQgBDADcAaABVAGoATwBiAGYAdgBkADMAYQBDAHgAeQB6AFkAagBhADkATgBkAHMAOABIAEwAcwBtAGcAcgBUADAAbABhAEYATwB5AFcAbABnAGYAVABzAG4AMgBGAFAASQA5AGwATwBlAGsAdABJAHMAagBwAEMAdwAwAEsAVgBIAHgAVgBsADYAUQBsAGMARgBrAEwAeABCADMASAB5ACsALwBJAHoATABCAFcANQBNAEUAMgBmAEUAcABJAGQAZQA0AE0AeAAzAHcATgBOAHoAQQBIAGIAUgBlAGQASQBoADgARgA2ADYARwBXADkAQQA4AEIASwBkAHYASAB0AFcANAB3AHEAUwAvAEMATABmAHkAeQBDAFYAVQBnAEMAWQAxADIARwB0ADMAcQBJAEEAOQBaAGoASQB3ADAATQBiAGEAZgAxADMAUgA2AHAAYwBEAHEATwBZAGcAWAByAHYAbABKAEYAbQA3ADQAeAB0ADUAdwBXAEEAMwBpADMASwA5AGsAZABrAHEAVQBXAFIAdwBQAGEAbwA0AHgAcABrADAAYgBaAFMARQB1AEYALwA2AGsAQQBSAEEAawBlADcAMQBYAEMAeQAzAHYAVQBVADEAMQBtADMAeABlAEgASABvAEQARABGAHQAbgA4AE4AcgBQAEkAeABOAFQAYgBEAHIAMABLAEkAVQBZAEQAWQBTAHIAVwBkAEcANwBGAEYAcQA4AHUAdQBGAEoANwB1AFoANgB5AHcAWgA3AG0AZgBkAHIAVABZAG4ARABJAG0AWABDAEYATAB6ADIAQgBWADkAeABiAFMAdQAyAEMAUwA0ADIAdAAvADcAbgBoAFUAQgBxADEAawBLAGkAZwB4AGQAbgBEAEgAeABXAFgANwA3AHoAdgBkAFEAZQBxAFQAUQBBAGgARwBOAGEATgBIAE4AcgBEAHYAVgB5AE0ATgBZAFgAYwByADAARQBaAG8AOABxAGQASABjAFcARABZAE0AdwA9AD0AIgAsACIAUwBpAGQAZQBiAGEAcgBUAG8AawBlAG4AIgA6ACIAWgB3AFQAcwBHAEIARAA0AFoASQBmADEAMgBiAEIAUQB4AFgAQgBJAGcARABEADIAdABRAGUATwBLAEsAeQA4AEwATwByAHkAMgAyAEoAbgBqAG8AUgBEAHkAZQBTAG8ALwByAEcAKwAwAHIAMgBTADEAdwBFAGQATgBzAHYAdQA2AFEARABuAHgARAA4AEYATwBFAE8AdwBTAG4AZABHAHEAUABhAFMAYQBpAFgAbwBMAHUASAB6AFMANwBaAGgAUwBSAGwASwBvAG0AVABOAE8ASgA4AGIARABtADQAMgBNAFMAMgBrADMAVABXAGYAbABmADYATQByAHMAagA4AHQAegA1AEQAVgBKAFEAZQBnAEMAUQBHAFUAawBlAHkATwBUAFoAdQBrAEwAVQBpAFMAUgBuAFcAOABWAEQAdQBHAFoARQBuAGIANwBqAHQAdABnAHYAVwBuAC8AdQBPAHMAQwBxAGoAcQBvAGQASAA4AEQAWAA3AG4AVQBmAEgAbgBxAGwAbQBsAHUAUwBYAHgATgBnAEcAVwBRAGgASgBjADUAVgBDAFcAVQBFAHcAUABBAHYANABUAEsAaABzAEoAawBXAHcAMgBkAC8AdwBUAFQAZQBOAGcAUwAxAG4ANwBJAFYATwB0AGkAMQBIAEIAUQB5AGIAMwBBAEYAaQBiAHAAbABoADQATgArAHgAbQBlAGgAcwAxAHUARgByAHIAZgAzADcASwB6AEoANgBxAHgAdwBqADcAZgBqAFcAYwBCAGQAOABDADUAcgAyAFkAaQAzAE8ATgBJAFgAYQBUAHoAOQBEADcAZQArADkAZQBVADcANQAwAHAAMQAvAEwATgBTAEIASgBRAFoAOABYADMASgBMAFEANAB5AGYAeQBkADcAawBFAGIAYwBYAEMAaABXAGsAUQArAG4ARABPAGgAOQA4ADAANQAyAGcAZABkAFIAUgBSAFEASQBtAEoANQByAE8AYQBqAEMAcgBkAEgAbwBnAEoANQA3AEgATwB1ADQAagBrAEkAYwBFAHgAQwBZADIATABZAEkAMQBFAFEAVABZAHAARQB5ADkAYwBqAEEAaABoAHMAWQB2AFYAbgBhAFEAcQBPAEIAVgBZAEYAbwBZAGcAMgBHAGQAegBWAFEAeQBUAGsAQwBnAEIAOQBUAHMAaQBMAE8AWQBxAGsATQBNAGYAaABBAEQAVwBQADAAWgBUAHoASwA1AEQAMQB0AFAAeQA3AG4ARQA4AEgATABCAHoATQBNAHAAYQAwADcAeQAwAHEAeAB6AE8AVgBwAEIAWQA4AGUAWgBMAFcAbABzAFUAZwB1AGEAegAyADUANwBiADYAbABUAEsANABYACsAQgBFAFkAUgA1AG8AVgBSAEIARQBYAHUATAA1AGIAUABEACsAbABDAG0ANgBFAGgAWAArAHkAbgBzAC8AcgBBADkAUQA1AFgAMQBsAHEAdgBjAEgAVwBRAEgANgAvAHcAVwA0AFEAMABZAEcAcwBNADcAWQBaAE0AUwBJAG4AbgBaAGwANgBrAGoAQwB0AFUAUQBCAHoAbwBnAE4AcgA0AEYAZAA3AEQAbABqAFkAaQBxAE8AUAB4ADcANABkAE0ASgAvAHUATQBSAHYANgBNAFgARQB3AFQAMABaAGIAZwBvAEUAQgBvAFEAYQByAFkANwAwADcASQBiAE8ARgBnAGwAUgBHAFEAQQBHAGMASABuAG8AVQBBAHAAZgBIAEYAaAB3AD0APQAiACwAIgBQAHIAbwBjAGUAcwBzAEYAdQBuAGMAdABpAG8AbgBOAHUAbQBiAGUAcgAiADoAMQA3ADgANQAsACIARQB2AGUAbgB0AEgAYQBuAGQAbABlAHIATQBlAHQAaABvAGQATgB1AG0AYgBlAHIAIgA6ADIANgA2ACwAIgBLAGUAeQBzACIAOgBbAHsAIgBzAGUAbABlAGMAdABlAGQASwBlAHkAIgA6ADQAOQA0ACwAIgBkAGEAdABhAFQAbwBrAGUAbgAiADoAIgBXAFYAOQBGAGoAMQBFAHcALwBiADEAQwBlAGwAMwA1AHIAbgBwAGYAcQBGAEoAZAAzAEMATwBDAHAAegBuAFcARQAyAFgANgAvADgAUQBwAFcANQA4AHIATQA4AE8ASQArAFUAcgBSAEsAcwBNADQAdQBOAGIAMABUAFMAVQBiAFMAbQA2AHEAVAAvADQAbgBDAHcAaQB2AEMAWAB2AHQAdABsAGkAaQBuAGwAZgAxAE4AOQBRAE8AdQA3AEsAOQA5AGMAZQBFAFQAcgB6AGwAaABYAHIAKwBJAGIAcQBqAHUAWABVAEkAcwB1AHoAbQBlAHcAUABoAEMAZABsAGkAUwBoAEIASQBLADcASgByAGQANgBmAHkAeQBxAGsAUwBUAEcAYQBhAFYATABGAEEAMABoAFMARwBoAEQANwBEAEMAawBuAC8AeABxAEsAVgBGAFEATgBLAFIAWgBwAEgAOQAwADAAbABWAHQAUwB0AFUAcwBTADcAaQBvAGUAQQB6AGoANgBUAGIAMABGAGcAMQBkAC8AdwBSAHkAdABMADIAYQBnAFIATQBqAEwASQByAHIANwAyAEsAcABCAFMAUQBUADcAYQBkAFIAQwBjADkARQBmAG4AUABhAG8AWAA4AFMAagBNACsAegBmAGQARQBHAHAAQgBUAEsAUwBxAFcANQBtAGwAaQB5AFIAdwBXADIASwBvAHYAWQBZAFIAcABEAGMAawBrAHoAMQBsAGcANgAzAHoANABLAGIAMABDAFgAaQBKADQARwBZAGkAegBHAFIAVgAvAEUASAA1AG4AOQBGAEQAdABiAEUATgAzAEoAcwBUAEMASQA1AFgAdgBuAHoAbABRAFcATgBxAGwAaABNAEUAUwBwAFgAVgBtAGsAWQBFAGMAdAArAHIAMABPAEkAeABxAHAASABMAEoAYwB0AHMASgBqADYANgBXAEsATABzADMASABEAFAASAB6ADAAcwBYAHoAeQBnAEEANwB2AEEATgB3AEkAKwBaAG0AdQBEAGIAMwB4AG0AUgBlAHMANQBHAHAAUQBDAGYAdwBWAFoAWQBJAEcAZABKAEYAWgB3AFIAYwBXAHcATgA5AEQARwBhAFUAawA0AEYAUwBJAEYAbgBlAFcAQwB2AHQAcgA5AHUAZQBPAFYAbwBmAGcANgBPADQASQBGAGIALwBFAEEAYgBKAGYAVABZAEoAawBuAFoAMAA4AFAAcQA4AEUAMwBHAGwAZAA4ACsAKwBhADYARQBKAFMAVABsAHYARwBGADEARQAvAGEAegBwAE0AKwBMAHcAVwBJAC8ARwAxAEgARQBTAHMANgB1AFIAMQBuAEwAaQArAG0AVwBIADMAdwBFAGwANABzAEMASgBnAC8AZABMAHUALwBmAHoARABiAHIAawBzAHcATgAzAHQAZQBBAFQARwBKADgAVgB3AHAALwB4AHgAQwBpAFgAYwBrAFcAKwBLAGUAUQA3AG4AbwBxAFoANwBFADcANwBmAGIAdgB0AEwAMQBlAHIAKwA4AFgAVgBkAHgALwBwAHUAUQA1AE8AVABuADMAZAAvAEIAawBGAHcASwBZAHoAeQBOADcAQQBnAE0AWgBoAG0AMgBZAGYAVgBGAHYARAA0AE4AUQB4ADIAMQBGAHoAeQByAGkAUwBNADgAeQBWAHEAcQBoAG4AVgB5AFoAVABzAEYAUgAwAG8AcgB3ACsAaAByAHIANwBlAEUAeQBQADIAQwBSAEoAbAAzAEsAZgBWAGEATQA1AGYANQBpAFQAbQA3AFgAbQBSAEUAcQBBAGYAYgBuAFkATwBwAE0AVwBoADQAYQBMAG0ATgB6AHYAVwBzAG4AdAB3AFgARQByACsATQAwAE4ASQBSAEoAbQBsADAATgBpAEwAaAB0ADUAdwBRAEsAWgAvAFMAZwBnAEEAUABCAFkAVwA1AGIAdQBRADMAbgBBAGcAdwBVAGYAdwB1AFIASQBvAG8ARABsAE0ATwArADUAZwAzACsAYQBiAE0AVgBWAEYAUwBFAEYAUgBZAGoAZgAxAGcAdwBOAFcATwBxAFIAQwBlAGsAeABaAEsAYQA3AHAATQBNAEwASAAzAEoAMgBDAHQAcwA3AG8AbAB4AE0ATgBTAHoANgBmAFUASgBJAEEAUQBGADUAQwBSAGoATgBsAG8AbgAzAFAAdwBJAHAAWQBYAGkAVABaAFkAaQBGAHoATgBHAG0ARgAyADEAbQB5AFUAYwBLADkAUgBIADIAaQBUAHoAQwBQAEsATQBGAGYAcQBVAHoATwBvAFcAOABzADIAZgAxAE0ASABlAEgAVQBKAFcAbgBNAC8ARgArAGsAdQBuAGgANwBDAGgASAAxAEgAIgB9AF0ALAAiAFEAdQBlAHIAeQAiADoAbgB1AGwAbAB9AA==</StringHttpBody>
+    </Request>
+    <Request Method="GET" Guid="3d513f26-b4dc-45db-9fb6-8f85dd07eb84" Version="1.1" Url="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <DependentRequests>
+        <Request Method="GET" Guid="4e1ef4a4-22e3-42f4-b1cf-dd29a664553b" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Session/GetSession" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="4d698d05-4b20-4bbf-9ded-7c94a50062f4" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Menu/GetCurrentMenuItemHeader" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="2c7aed16-2fbd-4b5e-8de5-5200fd42461d" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/ProcessFunction/GetTabs" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="uiElementToken" Value="sKZ14Nb1NsbI4Pe%2B9aGR%2FWM9XsF2DKKhj%2FSn0%2FrVMgkAF%2BRBHJ2W5KAJ79yzuD%2B2WSt2Ehp459qewhz4tc%2FNzcw3C9RYvt9q3cxXv5Exj0REc1fhK5guXpEC%2FW9FonfNF71oYrAommT59ue%2FbKdmr17mtTz4PmzkJn3Mpg1Mmgw%3D" RecordedValue="sKZ14Nb1NsbI4Pe%2B9aGR%2FWM9XsF2DKKhj%2FSn0%2FrVMgkAF%2BRBHJ2W5KAJ79yzuD%2B2WSt2Ehp459qewhz4tc%2FNzcw3C9RYvt9q3cxXv5Exj0REc1fhK5guXpEC%2FW9FonfNF71oYrAommT59ue%2FbKdmr17mtTz4PmzkJn3Mpg1Mmgw%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="POST" Guid="4e37f22e-67a8-48b4-b5a6-1662febdae77" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/ProcessFunction/GetBreadCrumbs" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+          </Headers>
+          <StringHttpBody ContentType="application/json;charset=utf-8" InsertByteOrderMark="False">ewAiAFUAaQBFAGwAZQBtAGUAbgB0AEkAZAAiADoAIgBlADYANQA3AGMAZAAzADMALQA5AGMAMgA4AC0ANAAzAGEAOQAtAGIAOAA0ADgALQA1AGEAOAAwAGMAYwAwAGYAYQBhADEAMgAiAH0A</StringHttpBody>
+        </Request>
+        <Request Method="GET" Guid="73da2eed-599c-4d34-9983-97e2a1b47e55" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Listing/GetListing" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="token" Value="sKZ14Nb1NsbI4Pe%252B9aGR%252FWM9XsF2DKKhj%252FSn0%252FrVMgkAF%252BRBHJ2W5KAJ79yzuD%252B2WSt2Ehp459qewhz4tc%252FNzcw3C9RYvt9q3cxXv5Exj0REc1fhK5guXpEC%252FW9FonfNF71oYrAommT59ue%252FbKdmr17mtTz4PmzkJn3Mpg1Mmgw%253D" RecordedValue="sKZ14Nb1NsbI4Pe%252B9aGR%252FWM9XsF2DKKhj%252FSn0%252FrVMgkAF%252BRBHJ2W5KAJ79yzuD%252B2WSt2Ehp459qewhz4tc%252FNzcw3C9RYvt9q3cxXv5Exj0REc1fhK5guXpEC%252FW9FonfNF71oYrAommT59ue%252FbKdmr17mtTz4PmzkJn3Mpg1Mmgw%253D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="POST" Guid="1770a7bf-d516-4edd-9f7d-093386b33ced" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Listing/GetSidebar" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+          </Headers>
+          <StringHttpBody ContentType="application/json;charset=utf-8" InsertByteOrderMark="False">ewAiAEwAaQBzAHQAaQBuAGcAVABvAGsAZQBuACIAOgAiAHMASwBaADEANABOAGIAMQBOAHMAYgBJADQAUABlACsAOQBhAEcAUgAvAFcATQA5AFgAcwBGADIARABLAEsAaABqAC8AUwBuADAALwByAFYATQBnAGsAQQBGACsAUgBCAEgASgAyAFcANQBLAEEASgA3ADkAeQB6AHUARAArADIAVwBTAHQAMgBFAGgAcAA0ADUAOQBxAGUAdwBoAHoANAB0AGMALwBOAHoAYwB3ADMAQwA5AFIAWQB2AHQAOQBxADMAYwB4AFgAdgA1AEUAeABqADAAUgBFAGMAMQBmAGgASwA1AGcAdQBYAHAARQBDAC8AVwA5AEYAbwBuAGYATgBGADcAMQBvAFkAcgBBAG8AbQBtAFQANQA5AHUAZQAvAGIASwBkAG0AcgAxADcAbQB0AFQAegA0AFAAbQB6AGsASgBuADMATQBwAGcAMQBNAG0AZwB3AD0AIgAsACIAQgByAGUAYQBkAGMAcgB1AG0AYgBUAG8AawBlAG4AIgA6ACIAOABsADEASgBwAFQAbQBEADIAdABhAGsAeQBIAEYAKwBrAEwAWAByAGEAdwA9AD0AIgAsACIAUAByAG8AYwBlAHMAcwBGAHUAbgBjAHQAaQBvAG4ATgB1AG0AYgBlAHIAIgA6ACIANAAyADkANQAiACwAIgBXAG8AcgBrAGYAbABvAHcASQBuAHMAdABhAG4AYwBlACIAOgAiADEAMgBlADYAMAAwADMANAAtADMANgA0ADEALQA0ADgAYQA4AC0AYQAwAGQAOQAtAGYAOAA5ADMAMgBkADgANgBjAGYAYwAzACIAfQA=</StringHttpBody>
+        </Request>
+        <Request Method="GET" Guid="56951adb-96c5-43d9-bb23-cb8eee7fe52b" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/Sidebar/GetOverview" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="a55c6677-c09b-48e4-8ade-8b5db7021850" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/UserDialog/GetShowChangePreferences" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="a28c3dbf-227d-4fd3-abff-510b00d6cd10" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Menu/GetMenuSetIsShowViewAlerts" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="77278b33-9e47-4344-9494-accd33af5131" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Menu/GetMenuSetIsShowRequestAssistance" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="45ae9581-4c09-4c26-95cb-3b488f0f7e2b" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/UserDialog/GetUserAlertCount" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="e8e7cee1-188e-4927-ba16-aa60f826f410" Version="1.1" Url="https://localhost/AccessSelect.Web/Stylesheets/Pictonic/fonts/pictonic.eot" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="f5496759-4a2e-4422-9b11-c5824ecd13e4" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Menu/SetMenuCollapse" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="collapsed" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+      </DependentRequests>
+      <Headers>
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="b9d6f231-8b81-4b06-b1ec-c935ba9c3d5e" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Menu/GetMenuSetInitial" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="menuItemNumber" Value="8304" RecordedValue="8304" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="menuSetNumber" Value="-1" RecordedValue="-1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="95933399-f641-4845-a1a7-74ccbed80035" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Listing/GetListingPreferences" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+      </Headers>
+      <StringHttpBody ContentType="application/json;charset=utf-8" InsertByteOrderMark="False">ewAiAEwAaQBzAHQAaQBuAGcATgB1AG0AYgBlAHIAIgA6ADEANAA3ADEAfQA=</StringHttpBody>
+    </Request>
+    <Request Method="GET" Guid="d1583403-b813-4aa4-a0fa-cd7ccf755aaa" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/UserDialog/GetFavourites" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="493954ed-4931-453e-baaa-8c4f73dfcaea" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Menu/GetBadgeCount" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="processNumber" Value="1401" RecordedValue="1401" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="870ee9df-5431-4964-98e8-4538f658112b" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Menu/GetBadgeCount" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="processNumber" Value="1097" RecordedValue="1097" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="7f27ccd8-a20a-458e-a2fb-bf34b15aae82" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/Listing/GetListingData" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+      </Headers>
+      <StringHttpBody ContentType="application/json;charset=utf-8" InsertByteOrderMark="False">ewAiAEYAaQBsAHQAZQByACIAOgB7ACIATgBhAG0AZQAiADoAIgAiACwAIgBMAGkAcwB0AGkAbgBnAE4AdQBtAGIAZQByACIAOgAxADQANwAxACwAIgBHAGUAbgBlAHIAYQBsAFMAZQBhAHIAYwBoAFQAZQByAG0AcwAiADoAIgAiACwAIgBRAHUAaQBjAGsARgBpAGwAdABlAHIAVgBhAGwAdQBlACIAOgAiACIALAAiAFEAdQBpAGMAawBGAGkAbAB0AGUAcgBGAGkAZQBsAGQAIgA6ACIAQQBiAHMAZQBuAGMAZQAgAFQAeQBwAGUAIgAsACIAQwByAGkAdABlAHIAaQBhACIAOgBbAF0AfQAsACIASwBlAHkAcwAiADoAWwBdACwAIgBMAGkAcwB0AGkAbgBnAFQAbwBrAGUAbgAiADoAIgBzAEsAWgAxADQATgBiADEATgBzAGIASQA0AFAAZQArADkAYQBHAFIALwBXAE0AOQBYAHMARgAyAEQASwBLAGgAagAvAFMAbgAwAC8AcgBWAE0AZwBrAEEARgArAFIAQgBIAEoAMgBXADUASwBBAEoANwA5AHkAegB1AEQAKwAyAFcAUwB0ADIARQBoAHAANAA1ADkAcQBlAHcAaAB6ADQAdABjAC8ATgB6AGMAdwAzAEMAOQBSAFkAdgB0ADkAcQAzAGMAeABYAHYANQBFAHgAagAwAFIARQBjADEAZgBoAEsANQBnAHUAWABwAEUAQwAvAFcAOQBGAG8AbgBmAE4ARgA3ADEAbwBZAHIAQQBvAG0AbQBUADUAOQB1AGUALwBiAEsAZABtAHIAMQA3AG0AdABUAHoANABQAG0AegBrAEoAbgAzAE0AcABnADEATQBtAGcAdwA9ACIALAAiAFAAYQBnAGUAIgA6ADEALAAiAFAAYQBnAGUAUwBpAHoAZQAiADoAMQAyACwAIgBQAGEAcgBlAG4AdABLAGUAeQBOAHUAbQBiAGUAcgAiADoANAA5ADQALAAiAFAAcgBvAGMAZQBzAHMARgB1AG4AYwB0AGkAbwBuAE4AdQBtAGIAZQByACIAOgAiADQAMgA5ADUAIgAsACIAUwBvAHIAdABpAG4AZwBGAGkAZQBsAGQAcwAiADoAWwBdAH0A</StringHttpBody>
+    </Request>
+    <Request Method="POST" Guid="8566f2b3-4ef4-4d17-9c6c-34a33112ac38" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/Alert/GetAlerts" ThinkTime="2" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+      </Headers>
+      <StringHttpBody ContentType="" InsertByteOrderMark="False">
+      </StringHttpBody>
+    </Request>
+    <Request Method="POST" Guid="20317055-41f3-4bf3-a0d3-dff46608a930" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/Workflow/HandleWorkflowEvent" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+      </Headers>
+      <StringHttpBody ContentType="application/json;charset=utf-8" InsertByteOrderMark="False">ewAiAFcAbwByAGsAZgBsAG8AdwBJAG4AcwB0AGEAbgBjAGUASQBkACIAOgAiADEAMgBlADYAMAAwADMANAAtADMANgA0ADEALQA0ADgAYQA4AC0AYQAwAGQAOQAtAGYAOAA5ADMAMgBkADgANgBjAGYAYwAzACIALAAiAFMAZQByAHYAaQBjAGUARQB2AGUAbgB0AE4AYQBtAGUAIgA6ACIAUwBhAHYAZQAiACwAIgBLAGUAeQBzACIAOgBbAHsAIgBzAGUAbABlAGMAdABlAGQASwBlAHkAIgA6ADIAMAAsACIAZABhAHQAYQBUAG8AawBlAG4AIgA6ACIAcwA2ADgATQBzAFoARgBYAHIAKwBzAEYAMgBKAFMAKwBGADUAeABpAC8AMwBUAHMALwBlAGIAMgBoAEcAawA0AEoAWgByADcAOABZAGQAUgBWAEQAeABwAEsAOQBzAGEAOQBTAEcAZQA2AFgATwBaAG8AWABkAE4ALwB4AHkASQBuAG8AOQBFAHkASABUAFgAbgBqAE0ATwBuADgARQB6AGYAeQBoAGQARQA1AHoAOAByADYAbABzAGcAawBZAEUAWABQAHcAaAAvAE8AUQB5AHUATwB3AHoAZABhADEAaQBlAFoARQBaAE4AcwBxAHcAOQBwAGgATwArAEUANgBoAGkATwBHAHEAOABvAHEAdQBVADAAMwAxAHIATwBlADgARgA3AEUAdQBsAFEAPQA9ACIAfQBdACwAIgBRAHUAZQByAHkAIgA6AG4AdQBsAGwAfQA=</StringHttpBody>
+    </Request>
+    <Request Method="GET" Guid="7bf89887-ecef-4f2c-84f9-3be3e569f7de" Version="1.1" Url="https://localhost/AccessSelect.Web/System/FormContainer.aspx" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <DependentRequests>
+        <Request Method="GET" Guid="c10a4eb4-10ba-4125-ba5c-e847cbded27c" Version="1.1" Url="https://localhost/AccessSelect.Web/Stylesheets/Pictonic/fonts/pictonic.eot" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/FormContainer.aspx" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="97d4f1fd-6079-4088-9e7e-737c3d2ba69e" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Session/GetSession" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/FormContainer.aspx" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="5b96b628-a1b5-47cc-b666-1bf3f56d8020" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Menu/GetCurrentMenuItemHeader" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/FormContainer.aspx" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="9e9d9836-487e-472a-a9b0-74782707edc5" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/Sidebar/GetOverview" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/FormContainer.aspx" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="6bf3c555-7451-494e-9a9d-76b37a5099eb" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/UserDialog/GetShowChangePreferences" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/FormContainer.aspx" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="0fdf17ad-cbf7-4c0d-bce5-e788c1eac15e" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Menu/GetMenuSetIsShowViewAlerts" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/FormContainer.aspx" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="b0113a4d-7a59-46e8-b773-b39f1a632cad" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Menu/GetMenuSetIsShowRequestAssistance" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/FormContainer.aspx" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="7bc16d10-05df-4302-b0b6-c895a3a1fe8a" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/UserDialog/GetUserAlertCount" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/FormContainer.aspx" />
+          </Headers>
+        </Request>
+        <Request Method="POST" Guid="b96e3f74-b33b-4857-8cb0-1911c47b4d3e" Version="1.1" Url="https://localhost/AccessSelect.Web/AlertsService.asmx/GetAlerts" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/FormContainer.aspx" />
+          </Headers>
+          <StringHttpBody ContentType="application/json; charset=utf-8" InsertByteOrderMark="False">
+          </StringHttpBody>
+        </Request>
+        <Request Method="GET" Guid="d32b995a-bebb-4f0e-9b30-db03ebddbcc7" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Menu/SetMenuCollapse" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/FormContainer.aspx" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="collapsed" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+      </DependentRequests>
+      <Headers>
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/ListingContainer.aspx" />
+      </Headers>
+      <ExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractHiddenFields, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="1" DisplayName="Extract Hidden Fields" Description="Extract all hidden fields from the response and place them into the test context.">
+          <RuleParameters>
+            <RuleParameter Name="Required" Value="True" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+          </RuleParameters>
+        </ExtractionRule>
+      </ExtractionRules>
+      <CorrelationExtractionRules>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam2.ctl00$ctl00$SystemContentPane$ContentPlaceHolderControl$DataFormControl$Control22914" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ctl00_ctl00_SystemContentPane_ContentPlaceHolderControl_DataFormControl_Control22914" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam3.ctl00$ctl00$SystemContentPane$ContentPlaceHolderControl$DataFormControl$Control22915" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="ctl00_ctl00_SystemContentPane_ContentPlaceHolderControl_DataFormControl_Control22915" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractFormField, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam4.ctl00$ctl00$SystemContentPane$ContentPlaceHolderControl$DataFormControl$Control22916" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="Name" Value="SystemContentPane_ContentPlaceHolderControl_DataFormControl_Control22916" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+            <RuleParameter Name="Index" Value="0" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam5.__ASYNCPOST" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value="den=&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot; onc" />
+            <RuleParameter Name="Index" Value="0" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam6.RadAJAXControlID" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value=" id=&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot; sty" />
+            <RuleParameter Name="Index" Value="12" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+        <ExtractionRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ExtractText, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" VariableName="FormPostParam7.RadAJAXControlID" DisplayName="" Description="">
+          <RuleParameters>
+            <RuleParameter Name="StartsWith" Value=" id=&quot;" />
+            <RuleParameter Name="EndsWith" Value="&quot;&gt;&#xD;&#xA;	" />
+            <RuleParameter Name="Index" Value="143" />
+            <RuleParameter Name="IgnoreCase" Value="False" />
+            <RuleParameter Name="UseRegularExpression" Value="False" />
+            <RuleParameter Name="HtmlDecode" Value="True" />
+            <RuleParameter Name="Required" Value="False" />
+          </RuleParameters>
+        </ExtractionRule>
+      </CorrelationExtractionRules>
+    </Request>
+    <Request Method="GET" Guid="072eb5a2-f598-4cab-8c51-f97cf5d84d87" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Menu/GetMenuSetInitial" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/FormContainer.aspx" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="menuItemNumber" Value="8304" RecordedValue="8304" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="menuSetNumber" Value="-1" RecordedValue="-1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="61bb80e1-605b-4655-b8ba-1de7da1a0873" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Menu/GetBadgeCount" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/FormContainer.aspx" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="processNumber" Value="1401" RecordedValue="1401" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="8d4a7e56-2db0-472c-9a7c-9e940fcb2374" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Menu/GetBadgeCount" ThinkTime="3" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/FormContainer.aspx" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="processNumber" Value="1097" RecordedValue="1097" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="97ee2e09-ddae-40df-a569-4d893df9dbf4" Version="1.1" Url="https://localhost/AccessSelect.Web/System/FormContainer.aspx" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="X-Requested-With" Value="XMLHttpRequest" />
+        <Header Name="X-MicrosoftAjax" Value="Delta=true" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/FormContainer.aspx" />
+      </Headers>
+      <FormPostHttpBody>
+        <FormPostParameter Name="ctl00$ctl00$ScriptManagerMasterPage" Value="ctl00$ctl00$SystemContentPane$ctl00$ctl00$SystemContentPane$RadAjaxPanelCommandButtonsPanel|ctl00$ctl00$SystemContentPane$ContentPlaceHolderWorkflowActions$LinkButtonFormSubmitted" RecordedValue="ctl00$ctl00$SystemContentPane$ctl00$ctl00$SystemContentPane$RadAjaxPanelCommandButtonsPanel|ctl00$ctl00$SystemContentPane$ContentPlaceHolderWorkflowActions$LinkButtonFormSubmitted" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ScriptManagerMasterPage_TSM" Value=";;System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35:en-GB:f9ecfe64-7d94-4875-a470-9996e4d00a9f:ea597d4b:b25378d2;Telerik.Web.UI, Version=2014.3.1024.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4:en-GB:45fa33f7-195b-4d8e-a1d1-d5955cf24e2c:16e4e7cd:f7645509:24ee1bba:92fe8ea0:f46195d3:fa31b949:874f8ea2:c128760b:19620875:490a9d4e:bd8f85e4:ed16cbdc:e330518b:2003d0b8:1e771326:88144a7a:c8618e41:e4f8f289:1a73651d:333f8d94:b7778d6c:c08e9f8a:82923ac3:e085fe68:1bb784d4:7c926187:c172ae1e:9cdfc6e7:fd9da3ae" RecordedValue=";;System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35:en-GB:f9ecfe64-7d94-4875-a470-9996e4d00a9f:ea597d4b:b25378d2;Telerik.Web.UI, Version=2014.3.1024.45, Culture=neutral, PublicKeyToken=121fae78165ba3d4:en-GB:45fa33f7-195b-4d8e-a1d1-d5955cf24e2c:16e4e7cd:f7645509:24ee1bba:92fe8ea0:f46195d3:fa31b949:874f8ea2:c128760b:19620875:490a9d4e:bd8f85e4:ed16cbdc:e330518b:2003d0b8:1e771326:88144a7a:c8618e41:e4f8f289:1a73651d:333f8d94:b7778d6c:c08e9f8a:82923ac3:e085fe68:1bb784d4:7c926187:c172ae1e:9cdfc6e7:fd9da3ae" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTTARGET" Value="ctl00$ctl00$SystemContentPane$ContentPlaceHolderWorkflowActions$LinkButtonFormSubmitted" RecordedValue="ctl00$ctl00$SystemContentPane$ContentPlaceHolderWorkflowActions$LinkButtonFormSubmitted" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTARGUMENT" Value="{{$HIDDEN1.__EVENTARGUMENT}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATE" Value="{{$HIDDEN1.__VIEWSTATE}}" RecordedValue="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" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00_ctl00_RadWindowManager1_ClientState" Value="{{$HIDDEN1.ctl00_ctl00_RadWindowManager1_ClientState}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ctl00$HiddenFieldFirstMenu" Value="{{$HIDDEN1.ctl00$ctl00$HiddenFieldFirstMenu}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ctl00$AlertPopups1$HiddenField0" Value="{{$HIDDEN1.ctl00$ctl00$AlertPopups1$HiddenField0}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ctl00$AlertPopups1$HiddenField1" Value="{{$HIDDEN1.ctl00$ctl00$AlertPopups1$HiddenField1}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ctl00$AlertPopups1$HiddenField2" Value="{{$HIDDEN1.ctl00$ctl00$AlertPopups1$HiddenField2}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ctl00$AlertPopups1$HiddenField3" Value="{{$HIDDEN1.ctl00$ctl00$AlertPopups1$HiddenField3}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ctl00$AlertPopups1$HiddenField4" Value="{{$HIDDEN1.ctl00$ctl00$AlertPopups1$HiddenField4}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ctl00$SearchTextBox" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ctl00$HiddenFieldRibbonMessages" Value="{{$HIDDEN1.ctl00$ctl00$HiddenFieldRibbonMessages}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ctl00$SystemContentPane$ContentPlaceHolderTabs$HiddenFieldAlerts" Value="{{$HIDDEN1.ctl00$ctl00$SystemContentPane$ContentPlaceHolderTabs$HiddenFieldAlerts}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ctl00$SystemContentPane$ContentPlaceHolderTabs$HiddenFieldEventResult" Value="{{$HIDDEN1.ctl00$ctl00$SystemContentPane$ContentPlaceHolderTabs$HiddenFieldEventResult}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00_ctl00_SystemContentPane_ContentPlaceHolderBreadCrumb_BreadCrumb1_RadContextMenuBreadCrumb_ClientState" Value="{{$HIDDEN1.ctl00_ctl00_SystemContentPane_ContentPlaceHolderBreadCrumb_BreadCrumb1_RadContextMenuBreadCrumb_ClientState}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ctl00$SystemContentPane$ContentPlaceHolderControl$DataFormControl$Control22914" Value="28/Feb/2017" RecordedValue="28/Feb/2017" CorrelationBinding="{{FormPostParam2.ctl00$ctl00$SystemContentPane$ContentPlaceHolderControl$DataFormControl$Control22914}}" UrlEncode="True" />
+        <FormPostParameter Name="ctl00_ctl00_SystemContentPane_ContentPlaceHolderControl_DataFormControl_Control22914_ClientState" Value="{&quot;enabled&quot;:true,&quot;emptyMessage&quot;:&quot;&quot;,&quot;validationText&quot;:&quot;2017-02-28-00-00-00&quot;,&quot;valueAsString&quot;:&quot;2017-02-28-00-00-00&quot;,&quot;minDateStr&quot;:&quot;1900-01-01-00-00-00&quot;,&quot;maxDateStr&quot;:&quot;2099-12-31-00-00-00&quot;,&quot;lastSetTextBoxValue&quot;:&quot;28/Feb/2017&quot;}" RecordedValue="{&quot;enabled&quot;:true,&quot;emptyMessage&quot;:&quot;&quot;,&quot;validationText&quot;:&quot;2017-02-28-00-00-00&quot;,&quot;valueAsString&quot;:&quot;2017-02-28-00-00-00&quot;,&quot;minDateStr&quot;:&quot;1900-01-01-00-00-00&quot;,&quot;maxDateStr&quot;:&quot;2099-12-31-00-00-00&quot;,&quot;lastSetTextBoxValue&quot;:&quot;28/Feb/2017&quot;}" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ctl00$SystemContentPane$ContentPlaceHolderControl$DataFormControl$Control22915" Value="28/Feb/2017" RecordedValue="28/Feb/2017" CorrelationBinding="{{FormPostParam3.ctl00$ctl00$SystemContentPane$ContentPlaceHolderControl$DataFormControl$Control22915}}" UrlEncode="True" />
+        <FormPostParameter Name="ctl00_ctl00_SystemContentPane_ContentPlaceHolderControl_DataFormControl_Control22915_ClientState" Value="{&quot;enabled&quot;:true,&quot;emptyMessage&quot;:&quot;&quot;,&quot;validationText&quot;:&quot;2017-02-28-00-00-00&quot;,&quot;valueAsString&quot;:&quot;2017-02-28-00-00-00&quot;,&quot;minDateStr&quot;:&quot;1900-01-01-00-00-00&quot;,&quot;maxDateStr&quot;:&quot;2099-12-31-00-00-00&quot;,&quot;lastSetTextBoxValue&quot;:&quot;28/Feb/2017&quot;}" RecordedValue="{&quot;enabled&quot;:true,&quot;emptyMessage&quot;:&quot;&quot;,&quot;validationText&quot;:&quot;2017-02-28-00-00-00&quot;,&quot;valueAsString&quot;:&quot;2017-02-28-00-00-00&quot;,&quot;minDateStr&quot;:&quot;1900-01-01-00-00-00&quot;,&quot;maxDateStr&quot;:&quot;2099-12-31-00-00-00&quot;,&quot;lastSetTextBoxValue&quot;:&quot;28/Feb/2017&quot;}" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ctl00$SystemContentPane$ContentPlaceHolderControl$DataFormControl$Control22916" Value="1" RecordedValue="1" CorrelationBinding="{{FormPostParam4.ctl00$ctl00$SystemContentPane$ContentPlaceHolderControl$DataFormControl$Control22916}}" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ctl00$SystemContentPane$ContentPlaceHolderControl$DataFormControl$Control22918" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="Control22918_ClientState" Value="{&quot;enabled&quot;:true,&quot;emptyMessage&quot;:&quot;&quot;,&quot;validationText&quot;:&quot;&quot;,&quot;valueAsString&quot;:&quot;&quot;,&quot;lastSetTextBoxValue&quot;:&quot;&quot;}" RecordedValue="{&quot;enabled&quot;:true,&quot;emptyMessage&quot;:&quot;&quot;,&quot;validationText&quot;:&quot;&quot;,&quot;valueAsString&quot;:&quot;&quot;,&quot;lastSetTextBoxValue&quot;:&quot;&quot;}" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ctl00$SystemContentPane$ContentPlaceHolderControl$DataFormControl$HiddenFieldEmailAddresses" Value="{{$HIDDEN1.ctl00$ctl00$SystemContentPane$ContentPlaceHolderControl$DataFormControl$HiddenFieldEmailAddresses}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ctl00$SystemContentPane$ContentPlaceHolderControl$DataFormControl$HiddenFieldPostbackRequired" Value="{{$HIDDEN1.ctl00$ctl00$SystemContentPane$ContentPlaceHolderControl$DataFormControl$HiddenFieldPostbackRequired}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__LASTFOCUS" Value="{{$HIDDEN1.__LASTFOCUS}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00_ctl00_SystemContentPane_ContentPlaceHolderControl_DataFormControl_ShareBarNotification_ClientState" Value="{{$HIDDEN1.ctl00_ctl00_SystemContentPane_ContentPlaceHolderControl_DataFormControl_ShareBarNotification_ClientState}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="keyword" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ctl00$SystemContentPane$ContentPlaceHolderActions$ctl00$Confirmed" Value="{{$HIDDEN1.ctl00$ctl00$SystemContentPane$ContentPlaceHolderActions$ctl00$Confirmed}}" RecordedValue="false" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ctl00$SystemContentPane$ContentPlaceHolderActions$ctl00$ButtonClickedFlag" Value="{{$HIDDEN1.ctl00$ctl00$SystemContentPane$ContentPlaceHolderActions$ctl00$ButtonClickedFlag}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATEGENERATOR" Value="{{$HIDDEN1.__VIEWSTATEGENERATOR}}" RecordedValue="1E50EB98" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__VIEWSTATEENCRYPTED" Value="{{$HIDDEN1.__VIEWSTATEENCRYPTED}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__EVENTVALIDATION" Value="{{$HIDDEN1.__EVENTVALIDATION}}" RecordedValue="ZJNtVnVAGWiBvl+6aaEruSslisK1xxeUYyptKu0mtB6+SLWLNMINE7ZggC9ikIVRo/0LYCq+BgW7GArV9uolz3CQ80uJwQbECVB8sncs9Wc2eNEjZWXLFNxBdr/wpTBRlXIopURu8D2Wua41FnoXef7ow7mzcRJyhh5BTEjqAx09E6jcrtpdZaGRXprHyX/ntB+jifk/kQ7phVbkb+CMeBgt2ugnmWmcsxgSqyfntouhP9uq3kdZa2r09rViAAz2zIO82N2WLQluNc2PhW1aBmnC6EZsvU2tqGFrWjfYt0HOg99tKKX1uiWOPeaqckzNNtoiMlYi86geC/KwMP+zWVEx2TvKTYUTHlAhfdKTar76bIHU1Tcm8tqveJ6QWGvqsEYXRiY+CFV0yaeoGOyF2PJd6aLeulWFbvRSCt9SGhPdZXBDKopDOvFkDZnaOJKIZXwi+9VzLzNs5qcwrucgQEyLkLpV9pin41A6wl6FpNiqX31DtnLG/3CTbNmn7Y5pqWTS33ISHDkPGwrC5NFImPrTFUyY/CbayYY0Z6NFfkV6bxkAqGkJWqRDGkab3FuGmydYBIt5WxDOGwy0sKKIzPqhCHB0YQwgYLt6iSS5y6JUkhyVm4VTobPbc67S7hnsj8XzWLZvZ8Af+pHC9lbjNJZfPHadgSDzfDmIrjg3YZ6uzFa3fcQLUVDJOu43c2jTP12jbi8hJ7TX3jGp8XrIjMJVrx5t3jIyf3VERjqy7srwsl8EvZTOgQn90oUFiDnAM+9l150KX5Whi7F0oCJfiFZpKairQyWouFdzqoe418A=" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00_ctl00_SystemContentPane_ContentPlaceHolderControl_DataFormControl_ShareBarNotification_C_RadSocialShareBar_ClientState" Value="{{$HIDDEN1.ctl00_ctl00_SystemContentPane_ContentPlaceHolderControl_DataFormControl_ShareBarNotification_C_RadSocialShareBar_ClientState}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00$ctl00$SystemContentPane$ContentPlaceHolderControl$DataFormControl$ShareBarNotification$hiddenState" Value="{{$HIDDEN1.ctl00$ctl00$SystemContentPane$ContentPlaceHolderControl$DataFormControl$ShareBarNotification$hiddenState}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00_ctl00_SystemContentPane_ContentPlaceHolderControl_DataFormControl_ShareBarNotification_XmlPanel_ClientState" Value="{{$HIDDEN1.ctl00_ctl00_SystemContentPane_ContentPlaceHolderControl_DataFormControl_ShareBarNotification_XmlPanel_ClientState}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="ctl00_ctl00_SystemContentPane_ContentPlaceHolderControl_DataFormControl_ShareBarNotification_TitleMenu_ClientState" Value="{{$HIDDEN1.ctl00_ctl00_SystemContentPane_ContentPlaceHolderControl_DataFormControl_ShareBarNotification_TitleMenu_ClientState}}" RecordedValue="" CorrelationBinding="" UrlEncode="True" />
+        <FormPostParameter Name="__ASYNCPOST" Value="true" RecordedValue="true" CorrelationBinding="{{FormPostParam5.__ASYNCPOST}}" UrlEncode="True" />
+        <FormPostParameter Name="RadAJAXControlID" Value="ctl00_ctl00_RadAjaxManagerMaster" RecordedValue="ctl00_ctl00_RadAjaxManagerMaster" CorrelationBinding="{{FormPostParam6.RadAJAXControlID}}" UrlEncode="True" />
+        <FormPostParameter Name="RadAJAXControlID" Value="ctl00_ctl00_SystemContentPane_RadAjaxPanelCommandButtons" RecordedValue="ctl00_ctl00_SystemContentPane_RadAjaxPanelCommandButtons" CorrelationBinding="{{FormPostParam7.RadAJAXControlID}}" UrlEncode="True" />
+      </FormPostHttpBody>
+    </Request>
+    <Request Method="GET" Guid="dcd31fd7-0e4d-4ed7-8023-cb174c2dbf4a" Version="1.1" Url="https://localhost/AccessSelect.Web/" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="https://localhost/AccessSelect.Web/Dashboard.aspx" ReportingName="" IgnoreHttpStatusCode="False">
+      <DependentRequests>
+        <Request Method="GET" Guid="30d0e53e-1496-4449-987b-c8b42a21311b" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Session/GetSession" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="608dea6b-465f-45bf-9bc5-dd72a459d47f" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Menu/GetCurrentMenuItemHeader" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="8999838d-2e76-4ad9-bc77-e11c7c8d4a83" Version="1.1" Url="https://localhost/AccessSelect.Web/Stylesheets/Pictonic/fonts/pictonic.eot" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="d4a86970-d33c-4817-ac8c-76c8caa669f0" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/UIElement/GetUIElements" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="token" Value="92C0YpkRw3a9O3MBOr6OaXqQK88x5kMk6Mr7eNUmkfM%3D" RecordedValue="92C0YpkRw3a9O3MBOr6OaXqQK88x5kMk6Mr7eNUmkfM%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="2afad562-bf21-4674-9031-9260469f24cd" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/UserDialog/GetShowChangePreferences" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="c44e013c-5cff-4edd-8eae-d313b96b531e" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Menu/GetMenuSetIsShowViewAlerts" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="31a0567e-4e53-4f03-88b7-138bf59731b6" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Menu/GetMenuSetIsShowRequestAssistance" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="8b869136-9ae7-4cb8-b55a-866b8a7b4c31" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/UserDialog/GetUserAlertCount" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="682d8ef3-4225-4675-8f20-c3f3f7b3d9cb" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/Dashboard/GetPossibleDashboards" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+          </Headers>
+        </Request>
+        <Request Method="GET" Guid="7f324139-94bb-4da2-88b1-11da7ab3fdab" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/UIElement/GetAvailableUIElements" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="token" Value="92C0YpkRw3a9O3MBOr6OaXqQK88x5kMk6Mr7eNUmkfM%3D" RecordedValue="92C0YpkRw3a9O3MBOr6OaXqQK88x5kMk6Mr7eNUmkfM%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+        <Request Method="GET" Guid="9d43afbb-bef9-4992-bdb0-95c166ee4b45" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Menu/SetMenuCollapse" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+          <Headers>
+            <Header Name="Accept" Value="application/json, text/plain, */*" />
+            <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+          </Headers>
+          <QueryStringParameters>
+            <QueryStringParameter Name="collapsed" Value="false" RecordedValue="false" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+          </QueryStringParameters>
+        </Request>
+      </DependentRequests>
+      <Headers>
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/System/FormContainer.aspx" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="8aa62dde-f88d-4dad-9b50-f1124b851af5" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Menu/GetMenuSetInitial" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="menuItemNumber" Value="8304" RecordedValue="8304" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="menuSetNumber" Value="-1" RecordedValue="-1" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="47c85fad-789b-449d-a543-68a68f4f8ca3" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/Dashboard/GetDashboardControl" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="token" Value="FqCft8nuRtXdp%2F5eqsA2Dar9mfB76PfUFIiWLNMl%2BNE%3D" RecordedValue="FqCft8nuRtXdp%2F5eqsA2Dar9mfB76PfUFIiWLNMl%2BNE%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="3b28e2b7-dc05-4fd7-a98b-10f2adc69be8" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/Dashboard/GetDashboardControl" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="token" Value="FqCft8nuRtXdp%2F5eqsA2DYD4O3%2FXjbsSQI2GHYOmkko%3D" RecordedValue="FqCft8nuRtXdp%2F5eqsA2DYD4O3%2FXjbsSQI2GHYOmkko%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+        <QueryStringParameter Name="" Value="" RecordedValue="" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="3c0363d2-fae9-475c-aac3-32b1cd5741b2" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Menu/GetBadgeCount" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="processNumber" Value="1401" RecordedValue="1401" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="9a5ba630-dc6c-4cae-be94-6f3869a289c0" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Menu/GetBadgeCount" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="processNumber" Value="1097" RecordedValue="1097" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="d0fe7599-bad8-4b1c-8680-a11524b2ac88" Version="1.1" Url="https://localhost/AccessSelect.Web/%7B%7Blink.AlternativeIcon%7D%7D" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+      </Headers>
+    </Request>
+    <Request Method="GET" Guid="e7719f24-9805-4448-8507-b981a3d843cb" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/Dashboard/GetLinkControl" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="token" Value="FqCft8nuRtXdp%2F5eqsA2Dar9mfB76PfUFIiWLNMl%2BNE%3D" RecordedValue="FqCft8nuRtXdp%2F5eqsA2Dar9mfB76PfUFIiWLNMl%2BNE%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="726de27f-951f-4129-82b8-dc46fc36a551" Version="1.1" Url="https://localhost/AccessSelect.Web//webapi/Listing/GetListing" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="token" Value="sKZ14Nb1NsbI4Pe%2B9aGR%2Ff3BP9j7p4%2FA4bJllboBKsHZI%2Fn%2Bm8tDA58bUt1R%2F%2BzKBdPNp%2BOIlrizoxohxeg3%2FF4tQUfSTePYvVtg%2B5nTVBfqWG3ex8s2HxJUbSqUAq9Lumzn%2Fez45XJZ88G1PiEyOBTiRksmbrB%2Fnz7RL4q%2F%2BzsLfWwbzYhGsqx64JZ0eXyb" RecordedValue="sKZ14Nb1NsbI4Pe%2B9aGR%2Ff3BP9j7p4%2FA4bJllboBKsHZI%2Fn%2Bm8tDA58bUt1R%2F%2BzKBdPNp%2BOIlrizoxohxeg3%2FF4tQUfSTePYvVtg%2B5nTVBfqWG3ex8s2HxJUbSqUAq9Lumzn%2Fez45XJZ88G1PiEyOBTiRksmbrB%2Fnz7RL4q%2F%2BzsLfWwbzYhGsqx64JZ0eXyb" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="1d587ab8-7432-4701-a763-1f609f1c5e48" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/BusinessIntelligence/GetChartData" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+      </Headers>
+      <StringHttpBody ContentType="application/json;charset=utf-8" InsertByteOrderMark="False">ewAiAEYAaQBsAHQAZQByACIAOgBuAHUAbABsACwAIgBLAGUAeQBzACIAOgBbAF0ALAAiAEwAaQBzAHQAaQBuAGcAVABvAGsAZQBuACIAOgAiAHMASwBaADEANABOAGIAMQBOAHMAYgBJADQAUABlACsAOQBhAEcAUgAvAGEAYwB4AHkAawByAC8AeQBXAHQAegBqADAAVgBPAEEASABVAEMATgBjACsAQQA0AFUAVQA1AC8AQwBPAEsAdwB2AHcAcABwAG8AMwBuAFUAOQAzAFoATQAwAHAAVQAvAEUAagBpAFgAVgBZAGoAawBlAGUAbwBnADQARAA1AGcAKwBTAHIAeABoAE0AZwBRAGQAUgA3AGIATgBQAHEAcQB5AFgANABxAHEARgBZAHMAVABkADYANgBuAHMAMQB6AEYARAAwADYAeABmAEkAawBEAEcAZQB3AGEAawBMADgAQQB4ADAAcQA5ADEAeABWAEQAKwBpAEEAeQB5AEgASQBEAEcALwByAFcAYwBhADYANQBjAGMAUgArAFEAYwBPAHgAVQBMAFoAZQA0AD0AIgAsACIAUABhAGcAZQAiADoAMAAsACIAUABhAGcAZQBTAGkAegBlACIAOgAtADEALAAiAFAAcgBvAGMAZQBzAHMARgB1AG4AYwB0AGkAbwBuAE4AdQBtAGIAZQByACIAOgA0ADgAOQA4ACwAIgBTAG8AcgB0AGkAbgBnAEYAaQBlAGwAZABzACIAOgBuAHUAbABsAH0A</StringHttpBody>
+    </Request>
+    <Request Method="GET" Guid="feaa26a9-4ffe-4cb2-9104-16dd93bf4cc6" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/BusinessIntelligence/GetChartMeta" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="token" Value="sKZ14Nb1NsbI4Pe%2B9aGR%2Facxykr%2FyWtzj0VOAHUCNc%2BA4UU5%2FCOKwvwppo3nU93ZM0pU%2FEjiXVYjkeeog4D5g%2BSrxhMgQdR7bNPqqyX4qqFYsTd66ns1zFD06xfIkDGewakL8Ax0q91xVD%2BiAyyHIDG%2FrWca65ccR%2BQcOxULZe4%3D" RecordedValue="sKZ14Nb1NsbI4Pe%2B9aGR%2Facxykr%2FyWtzj0VOAHUCNc%2BA4UU5%2FCOKwvwppo3nU93ZM0pU%2FEjiXVYjkeeog4D5g%2BSrxhMgQdR7bNPqqyX4qqFYsTd66ns1zFD06xfIkDGewakL8Ax0q91xVD%2BiAyyHIDG%2FrWca65ccR%2BQcOxULZe4%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="a2defb4b-ac0b-4e3d-ab1d-944bb746dd04" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/BusinessIntelligence/GetChartData" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+      </Headers>
+      <StringHttpBody ContentType="application/json;charset=utf-8" InsertByteOrderMark="False">ewAiAEYAaQBsAHQAZQByACIAOgBuAHUAbABsACwAIgBLAGUAeQBzACIAOgBbAF0ALAAiAEwAaQBzAHQAaQBuAGcAVABvAGsAZQBuACIAOgAiAHMASwBaADEANABOAGIAMQBOAHMAYgBJADQAUABlACsAOQBhAEcAUgAvAFUAbwBKAGcAVQA5AEkAWQBqAEQAZwAyAFIAUwBQAGoAMABBAFUATwAwADEAeQA3AHMAVgBRAGwANAByAGwAOABLAHYARgBWAGkAaQBjAGMANABmAHQASAArAEgAZQBMAFYAUQBTAEgAWQB1ADYAUwA2ADYAKwBTAHQAWgBnAGwAQwBKAHgAcgB3AFUARQBhAFoAUwB3AGMAQQBpAGcAaQB6AHAAcQBiAGgATQBOAHcAVwBTAC8AdgBQAE0AcABYAHMARAB6ADQAZQBKAFEAcAAwAEIAawBSAEwAQgBaAGcAYgA1AFIATQB4AEUASwBRAFIAcQBQAEcAbwBsAG4AVQBPAGsAUwBTADkAVgBFAFAALwB4AHcAegBxAFQAbgBhAEoANQBJAG8AZgBVAD0AIgAsACIAUABhAGcAZQAiADoAMAAsACIAUABhAGcAZQBTAGkAegBlACIAOgAtADEALAAiAFAAcgBvAGMAZQBzAHMARgB1AG4AYwB0AGkAbwBuAE4AdQBtAGIAZQByACIAOgA0ADkAMAAwACwAIgBTAG8AcgB0AGkAbgBnAEYAaQBlAGwAZABzACIAOgBuAHUAbABsAH0A</StringHttpBody>
+    </Request>
+    <Request Method="GET" Guid="cd9a4589-3ecf-41fb-ab3e-27d35977b804" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/BusinessIntelligence/GetChartMeta" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="token" Value="sKZ14Nb1NsbI4Pe%2B9aGR%2FUoJgU9IYjDg2RSPj0AUO01y7sVQl4rl8KvFViicc4ftH%2BHeLVQSHYu6S66%2BStZglCJxrwUEaZSwcAigizpqbhMNwWS%2FvPMpXsDz4eJQp0BkRLBZgb5RMxEKQRqPGolnUOkSS9VEP%2FxwzqTnaJ5IofU%3D" RecordedValue="sKZ14Nb1NsbI4Pe%2B9aGR%2FUoJgU9IYjDg2RSPj0AUO01y7sVQl4rl8KvFViicc4ftH%2BHeLVQSHYu6S66%2BStZglCJxrwUEaZSwcAigizpqbhMNwWS%2FvPMpXsDz4eJQp0BkRLBZgb5RMxEKQRqPGolnUOkSS9VEP%2FxwzqTnaJ5IofU%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="d046f36c-d05b-4e53-bb10-103a086c6a64" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/BusinessIntelligence/GetChartData" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+      </Headers>
+      <StringHttpBody ContentType="application/json;charset=utf-8" InsertByteOrderMark="False">ewAiAEYAaQBsAHQAZQByACIAOgBuAHUAbABsACwAIgBLAGUAeQBzACIAOgBbAF0ALAAiAEwAaQBzAHQAaQBuAGcAVABvAGsAZQBuACIAOgAiAHMASwBaADEANABOAGIAMQBOAHMAYgBJADQAUABlACsAOQBhAEcAUgAvAGIAQgBZAE0AQwBjAG0AKwBCAEMAOQBmAE4ARwBoAC8AMgBUAGEAOQBzAEQAQQBvAHMAZAA2AHQATQBFAFoARQBvAFgAVwB3AGQAcgBWAFQAKwA3AGYAeQBLAEwASABjADcAZwBTAGwAMQB5AE8AWAA1AFgAeABNAEcAUgBXAGUAWAAzAEUAOQBNAHcASwB3ADYATABhAHgAbAA1AHgARgBHADkAZQBZAFAAeQBTAE4ANgA0ADgARgBSAE4AcABzAG4AeABUADQANQBXAHYAbgBoAGoAbgBhAEEAcQBWAEwAdgBnAHAAVwBUAEUANwBjAEUAUgBSAFoAawBxADYAMgBaADYAWAB3ADMASgA2AEUAeABaAGUAcQBNAHMAbAA5AHkAVwBBAHcAMwBZAD0AIgAsACIAUABhAGcAZQAiADoAMAAsACIAUABhAGcAZQBTAGkAegBlACIAOgAtADEALAAiAFAAcgBvAGMAZQBzAHMARgB1AG4AYwB0AGkAbwBuAE4AdQBtAGIAZQByACIAOgA0ADkAMAAyACwAIgBTAG8AcgB0AGkAbgBnAEYAaQBlAGwAZABzACIAOgBuAHUAbABsAH0A</StringHttpBody>
+    </Request>
+    <Request Method="GET" Guid="43068a1c-cb61-4455-ac4e-2970e89bf0c6" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/BusinessIntelligence/GetChartMeta" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="token" Value="sKZ14Nb1NsbI4Pe%2B9aGR%2FbBYMCcm%2BBC9fNGh%2F2Ta9sDAosd6tMEZEoXWwdrVT%2B7fyKLHc7gSl1yOX5XxMGRWeX3E9MwKw6Laxl5xFG9eYPySN648FRNpsnxT45WvnhjnaAqVLvgpWTE7cERRZkq62Z6Xw3J6ExZeqMsl9yWAw3Y%3D" RecordedValue="sKZ14Nb1NsbI4Pe%2B9aGR%2FbBYMCcm%2BBC9fNGh%2F2Ta9sDAosd6tMEZEoXWwdrVT%2B7fyKLHc7gSl1yOX5XxMGRWeX3E9MwKw6Laxl5xFG9eYPySN648FRNpsnxT45WvnhjnaAqVLvgpWTE7cERRZkq62Z6Xw3J6ExZeqMsl9yWAw3Y%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="GET" Guid="455fc0f5-aad9-4c1a-b325-0337fb782de3" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/Dashboard/GetLinkControl" ThinkTime="1" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+      </Headers>
+      <QueryStringParameters>
+        <QueryStringParameter Name="token" Value="FqCft8nuRtXdp%2F5eqsA2DYD4O3%2FXjbsSQI2GHYOmkko%3D" RecordedValue="FqCft8nuRtXdp%2F5eqsA2DYD4O3%2FXjbsSQI2GHYOmkko%3D" CorrelationBinding="" UrlEncode="False" UseToGroupResults="False" />
+      </QueryStringParameters>
+    </Request>
+    <Request Method="POST" Guid="8b3ce956-5799-4e4e-ba83-1d35c6f42566" Version="1.1" Url="https://localhost/AccessSelect.Web/webapi/Alert/GetAlerts" ThinkTime="0" Timeout="300" ParseDependentRequests="True" FollowRedirects="True" RecordResult="True" Cache="False" ResponseTimeGoal="0" Encoding="utf-8" ExpectedHttpStatusCode="0" ExpectedResponseUrl="" ReportingName="" IgnoreHttpStatusCode="False">
+      <Headers>
+        <Header Name="Accept" Value="application/json, text/plain, */*" />
+        <Header Name="Referer" Value="https://localhost/AccessSelect.Web/Dashboard.aspx" />
+      </Headers>
+      <StringHttpBody ContentType="" InsertByteOrderMark="False">
+      </StringHttpBody>
+    </Request>
+  </Items>
+  <ValidationRules>
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidateResponseUrl, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response URL" Description="Validates that the response URL after redirects are followed is the same as the recorded response URL.  QueryString parameters are ignored." Level="Low" ExectuionOrder="BeforeDependents" />
+    <ValidationRule Classname="Microsoft.VisualStudio.TestTools.WebTesting.Rules.ValidationRuleResponseTimeGoal, Microsoft.VisualStudio.QualityTools.WebTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" DisplayName="Response Time Goal" Description="Validates that the response time for the request is less than or equal to the response time goal as specified on the request.  Response time goals of zero will be ignored." Level="Low" ExectuionOrder="AfterDependents">
+      <RuleParameters>
+        <RuleParameter Name="Tolerance" Value="0" />
+      </RuleParameters>
+    </ValidationRule>
+  </ValidationRules>
+</WebTest>
